@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Flask Tutorial</title>
+</head>
+
+<body>
+    <h1>This is the Index page</h1>
+
+    <form method="GET" action="/submit">
+        <label for="name">First name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="numofcards">Number of cards</label><br>
+        <input type="number" id="numofcards" name="numofcards" min="1" max="6">
+
+        <input type="submit" value="Submit">
+    </form>
+<p>When </p>
+</body>
+
+</html>
+
+<!--This is the index page.-->
+<!--You entered {{number_of_cards}}-->
+
+<!--&lt;!&ndash; the "action" and "method" is what submit &ndash;&gt;-->
+
+<!--<form action="/submit" method="post">-->
+<!--  <input type="number" min="1" max="6" name="number" placeholder="How many cards?"></input>-->
+<!--  <input type="submit" value="Give me a reading"></input>-->
+<!--</form>-->
+
+
+<!--{{number_of_cards}}-->
