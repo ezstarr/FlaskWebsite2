@@ -59,7 +59,7 @@ def creates_index_html_page():
 
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False)
 
 
 
