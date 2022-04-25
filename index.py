@@ -41,6 +41,8 @@ def creates_index_html_page():
 	name = request.args.get('name', "N/A")
 	numofcards = request.args.get('numofcards', 1, type=int)
 
+	if numofcards < 1:
+		numofcards = 1
 	if numofcards > 6:
 		numofcards = 6
 
