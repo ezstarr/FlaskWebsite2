@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, request, flash, escape, render_template
+from flask import Flask, redirect, url_for, request, flash, escape, render_template, jsonify
 import random
 import Fortune_deck as F_D
 import json
@@ -17,6 +17,11 @@ title += "<a href=\"http://127.0.0.1:5000/submit\">tarot page</a>"
 @app.route("/", methods=['GET', 'POST'])
 def home():
 	return render_template('index.html')
+
+# The reading result page.
+@app.route("/result", methods=['GET', 'POST'])
+def reading_result():
+	return render_template('reading_result.txt')
 
 @app.route("/admin")
 def admin():

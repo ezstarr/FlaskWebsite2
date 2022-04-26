@@ -21,20 +21,18 @@ body {
 }
 </style>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-            $("#btn").click(function(){
-                $("#ajax_div_1").load(reading_result.txt");
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("#test").load("submit");
             });
         });
-        </script>
-
-
+    </script>
 
 <h1><img src="static/images/banner.gif" width=400 align=center></h1>
 <div class="flex-container">
-<div id="ajax_div_1">
+<div class="tarot_form" id="test">
     <h3>Get a tarot reading here:</h3>
 
     <form method="GET" action="/submit">
@@ -43,10 +41,10 @@ body {
         <label for="numofcards">Number of cards</label><br>
         <input type="number" id="numofcards" name="numofcards" min="1" max="6">
 
-        <input type="submit" value="Submit">
+<!--        <input id="btninput" type="submit" value="Submit">-->
+        <button id="btn">Submit</button>
     </form>
 </div>
-    <button id="btn">Click to change</button>
   <div>Hello, welcome to humble abode, where I share the things I enjoy. To the left, you can find little side coding projects I'm working on. To the right, we don't know. Thank you for stopping by. Also, this is a test. Learning FLEX BOXES.</div>
   <div>TBD</div>
 </div>
