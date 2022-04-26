@@ -19,9 +19,9 @@ def home():
 	return render_template('index.html')
 
 # The reading result page.
-@app.route("/result", methods=['GET', 'POST'])
-def reading_result():
-	return render_template('reading_result.txt')
+# @app.route("/result", methods=['GET', 'POST'])
+# def reading_result():
+# 	return render_template('reading_result.txt')
 
 @app.route("/admin")
 def admin():
