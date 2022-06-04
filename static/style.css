@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: grey;
+  }
+
+.flex-container {
+  display: flex;
+  background-color: #474747 ;
+}
+
+.flex-container > div {
+  background-color: #474747;
+  margin: 10px;
+  padding: 20px;
+  font-size: 12px;
+}
